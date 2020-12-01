@@ -16,7 +16,6 @@ for i in range(1, len(file.split("\n"))):
         else:
             result[data[1]][1] += 1
             result[data[1]][2][data[2]] = 0
-
     else:
         if data[0] != "NA":
             result[data[1]] = [int(data[0]), 0, {data[2]: data[0]}]
